@@ -2,8 +2,18 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
-      home: Center(child: Text("Goodbye, world!")),
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.yellow,
+        appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: Colors.blue,
+          title: Text('My Dashatar App'),
+        ),
+        body: Center(
+          child: Image.asset("images/ss-dashatar.png")
+        ),
+      ),
     ),
   );
 }
